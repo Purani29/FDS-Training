@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h2>College Fest 2026</h2>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="registration.html">Registration</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-title">
+
+            <h1>Event Registration</h1>
+
+            <p>
+                Register for your favorite event.
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <form id="registrationForm">
+
+                <label for="name">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="Enter 10 digit phone number"
+                >
+
+
+                <label for="department">
+                    Department
+                </label>
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Enter your department"
+                >
+
+
+                <label for="event">
+                    Select Event
+                </label>
+
+                <select id="event">
+
+                    <option value="">
+                        Select an Event
+                    </option>
+
+                    <option value="Hackathon">
+                        Hackathon
+                    </option>
+
+                    <option value="Technical Quiz">
+                        Technical Quiz
+                    </option>
+
+                    <option value="Cultural Dance">
+                        Cultural Dance
+                    </option>
+
+                    <option value="Photography">
+                        Photography
+                    </option>
+
+                </select>
+
+
+                <button type="submit" class="btn">
+                    Register
+                </button>
+
+                <p id="registrationMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 College Fest | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

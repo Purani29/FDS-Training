@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Weather & Travel Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <h1>🌤 Smart Weather & Travel Dashboard</h1>
+
+        <p>
+            Check the weather and plan your trip
+        </p>
+
+    </header>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>Search Weather</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+
+        <!-- Current Weather Section -->
+        <section
+            id="weatherSection"
+            class="weather-card"
+            style="display: none;"
+        >
+
+            <h2 id="cityName">
+                City Name
+            </h2>
+
+            <!-- Weather Icon -->
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+            <!-- Temperature -->
+            <h1 id="temperature">
+                --°C
+            </h1>
+
+            <!-- Weather Description -->
+            <p id="weatherDescription">
+                Weather description
+            </p>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <!-- Humidity -->
+                <div class="detail-card">
+
+                    <h3>💧 Humidity</h3>
+
+                    <p id="humidity">
+                        --%
+                    </p>
+
+                </div>
+
+
+                <!-- Wind -->
+                <div class="detail-card">
+
+                    <h3>💨 Wind</h3>
+
+                    <p id="wind">
+                        -- m/s
+                    </p>
+
+                </div>
+
+
+                <!-- Feels Like -->
+                <div class="detail-card">
+
+                    <h3>🌡️ Feels Like</h3>
+
+                    <p id="feelsLike">
+                        --°C
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 Day Forecast Section -->
+        <section
+            id="forecastSection"
+            class="forecast-section"
+        >
+
+            <h2>📅 5-Day Forecast</h2>
+
+            <div
+                id="forecastContainer"
+                class="forecast-container"
+            >
+
+                <!-- Forecast cards will be added using JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Travel Suggestion Section -->
+        <section
+            id="travelSection"
+            class="travel-section"
+        >
+
+            <h2>✈️ Travel Suggestion</h2>
+
+            <p id="travelSuggestion">
+                Search for a city to get travel suggestions.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Smart Weather & Travel Dashboard
+        </p>
+
+        <p>
+            Weather data powered by OpenWeatherMap
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

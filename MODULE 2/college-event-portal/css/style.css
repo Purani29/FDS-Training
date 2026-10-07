@@ -1,0 +1,503 @@
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 6%;
+}
+
+
+.navbar h2 {
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/event1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.btn {
+    display: inline-block;
+
+    background-color: #007bff;
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- ANNOUNCEMENT ---------- */
+
+.announcement {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+
+.announcement h2 {
+    margin-bottom: 20px;
+}
+
+
+.announcement-box {
+    background-color: white;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    padding: 50px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* ---------- PAGE TITLE ---------- */
+
+.page-title {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: #e9ecef;
+}
+
+
+.page-title h1 {
+    margin-bottom: 10px;
+}
+
+
+/* ---------- EVENTS ---------- */
+
+.events-container {
+    padding: 50px 8%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.event-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+
+    transition: 0.3s;
+}
+
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.event-card h2 {
+    color: #007bff;
+
+    margin-bottom: 10px;
+}
+
+
+.event-card .btn {
+    margin-top: 10px;
+}
+
+
+/* ---------- SCHEDULE ---------- */
+
+.schedule {
+    padding: 30px 8%;
+    text-align: center;
+}
+
+
+.schedule table {
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+.schedule th,
+.schedule td {
+    border: 1px solid #ccc;
+
+    padding: 15px;
+}
+
+
+.schedule th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* ---------- FORM ---------- */
+
+.form-section {
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+form label {
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+form input,
+form select {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+form input:focus,
+form select:focus {
+    outline: none;
+
+    border-color: #007bff;
+}
+
+
+form button {
+    margin-top: 20px;
+}
+
+
+#registrationMessage {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* ---------- GALLERY ---------- */
+
+.gallery {
+    padding: 50px 8%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.gallery img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-box {
+    max-width: 700px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+.contact-box h2 {
+    margin-bottom: 20px;
+
+    color: #007bff;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+
+        width: 100%;
+
+        text-align: center;
+
+        gap: 5px;
+    }
+
+
+    .nav-links a {
+        width: 100%;
+    }
+
+
+    .hero {
+        min-height: 400px;
+    }
+
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .events-container {
+        padding: 30px 5%;
+    }
+
+
+    .form-section {
+        margin: 30px 5%;
+    }
+
+
+    .schedule {
+        overflow-x: auto;
+    }
+
+
+    .schedule table {
+        min-width: 600px;
+    }
+
+
+    .gallery {
+        padding: 30px 5%;
+    }
+
+
+    .gallery img {
+        height: 220px;
+    }
+
+}

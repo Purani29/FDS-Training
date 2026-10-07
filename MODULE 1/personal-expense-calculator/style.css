@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e3a8a;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#expenseList {
+    list-style: none;
+}
+
+#expenseList li {
+    background-color: #f1f5f9;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.summary p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+#savings {
+    font-weight: bold;
+    color: green;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
